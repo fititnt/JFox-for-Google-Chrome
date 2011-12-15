@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <script type="text/javascript">
+            chrome.extension.onRequest.addListener(
+            function(request, sender, sendResponse) {
+                console.log(sender.tab ?
+                    "from a content script:" + sender.tab.url :
+                    "from the extension");
+                if (request.greeting == "hello")
+                    sendResponse({farewell: "goodbye"});
+                else
+                    sendResponse({}); // snub them.
+            });
+            
+            //code ref #1 start
+            //alert('Popup start...');
+            bg = chrome.extension.getBackgroundPage();
+            console.log("JoomlaDefaultDebug from background.html: " + bg.JoomlaDefaultDebug);
+            //alert("JoomlaDefaultDebug from background.html: " + bg.JoomlaDefaultDebug);
+            //code ref #1 end
+        </script> 
+    </head>
+    <body>
+    </body>
+</html>

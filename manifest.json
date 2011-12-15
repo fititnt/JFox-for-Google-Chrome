@@ -1,0 +1,36 @@
+{
+    "name": "JChrome for Google Chrome",
+    "version": "0.6",
+    "minimum_chrome_version": "10.0",
+    "options_page": "sys/options.html",    
+    "icons": {
+        "16": "icons/icon-16.png",
+        "48": "icons/icon-48.png",
+        "32": "icons/icon-32.png"/*,//Maybe 32 is not really necessary here
+        "128": "icons/icon-128.png"*/
+    },
+    
+    "description": "Extension for Google Chrome that, with help of one Joomla Plugin, and one optional Joomla component, make more ease for Joomla programers and developers debug yours extensions, or even help with some possible security problems on your Joomla site.",
+    "browser_action": {
+        "default_icon": "icons/icon-48.png",
+        "popup": "sys/popup.html"
+    },
+    "content_scripts": [
+    {
+        "matches": ["http://*/*"],
+        "js": ["contentscript.js"]
+    }
+    ],
+    "devtools_page": "sys/devtools.html",
+    "background_page": "sys/background.html",
+    "permissions": [
+    "experimental",
+    "webRequest",
+    "clipboardWrite",
+    "clipboardRead",
+    /*"background",*/
+    "tabs",
+    "http://*/*",
+    "https://*/*"
+    ]
+}
