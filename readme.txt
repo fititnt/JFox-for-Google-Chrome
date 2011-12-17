@@ -1,4 +1,4 @@
-JChrome for Google Chrome
+JFox for Google Chrome
 Extension for Google Chrome that, with help of one Joomla Plugin, and one 
 optional Joomla component, make more ease for Joomla programers and 
 developers debug yours extensions, or even help with some possible security 
@@ -18,29 +18,16 @@ License:
 	
 ----------------------------------- How to use ---------------------------------
 
-Install on your site like any normal library.
-
-Example 1, log:
-     jimport('validate.validate');
-     (...)
-
-Please read /doc for more information
-
 --------------------------- Instalation & Dependences --------------------------
-Dependences:
-- JPlatform 1.6+
-- PHP 5.2+
 
 -------------------------------------- Todo ------------------------------------
-References
-http://code.google.com/chrome/extensions/messaging.html
 
 -------------------------------------- Todo ------------------------------------
 
 ----------------------------------- Changelog ----------------------------------
 
 2011-12-15: 0.1
-! Created. Based on lib_debug 0.5alpha from Emerson Rocha Luiz
+! Created.
 
 CHANGELOG LEGEND:
 + Added
